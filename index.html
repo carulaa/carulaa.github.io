@@ -5,24 +5,34 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
     <style>
+        @font-face {
+            font-family: 'Chicago';
+            src: url('ChicagoFLF.woff2') format('woff2'),
+                 url('ChicagoFLF.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body, html {
             height: 100%;
             margin: 0;
             display: flex;
             flex-direction: column;
-            font-family: var(--font-sans);
+        }
+        .top-bar, .system-menu button {
+            font-family: 'Chicago'; /* Use Chicago font for top bar and system buttons */
         }
         .top-bar {
-            background-color: #B0B0B0;
+            background-color: white; /* Set top bar background to white */
             height: 30px;
             display: flex;
             align-items: center;
             padding: 0 10px;
         }
         .top-bar .apple-logo {
-            width: 20px;
-            height: 20px;
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg');
+            width: 32px; /* Set apple logo size */
+            height: 32px;
+            background-image: url('piteto.png'); /* Use custom apple logo */
             background-size: contain;
             background-repeat: no-repeat;
             margin-right: 10px;
@@ -36,7 +46,6 @@
             border: none;
             cursor: pointer;
             margin-right: 5px;
-            font-family: var(--font-sans);
         }
         .system-menu button:hover {
             background-color: rgba(0, 0, 0, 0.2);
@@ -70,4 +79,3 @@
     </div>
 </body>
 </html>
-
