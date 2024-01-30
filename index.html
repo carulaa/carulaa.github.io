@@ -9,39 +9,52 @@
             height: 100%;
             margin: 0;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column;
         }
         .top-bar {
-            background-color: #b0b0b0;
-            height: 1.5rem;
-            width: 100%;
+            background-color: #B0B0B0;
+            height: 30px;
             display: flex;
-            justify-content: flex-end;
-            padding: 0.5rem;
+            align-items: center;
+            padding: 0 10px;
         }
-        .button {
-            background-color: #f5f5f5;
-            border: 1px solid #808080;
-            border-radius: 3px;
-            margin-left: 0.5rem;
-            padding: 0.2rem 0.5rem;
+        .top-bar .apple-logo {
+            width: 20px;
+            height: 20px;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 10px;
+        }
+        .system-menu {
+            display: flex;
+            margin-left: auto;
+        }
+        .system-menu button {
+            background-color: transparent;
+            border: none;
             cursor: pointer;
+            margin-right: 5px;
+        }
+        .system-menu button:hover {
+            background-color: rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
+    <div class="top-bar">
+        <div class="apple-logo"></div>
+        <div class="system-menu">
+            <button>File</button>
+            <button>Edit</button>
+            <button>View</button>
+            <button>Special</button>
+        </div>
+    </div>
     <div>
         <div class="window" style="width:30rem;">
-            <div class="top-bar">
-                <div class="button"></div>
-                <div class="button"></div>
-                <div class="button"></div>
-            </div>
             <div class="title-bar"> 
-                <button aria-label="Close" class="close"></button>
                 <h1 class="title">PiteTo</h1>
-                <button aria-label="Resize" class="resize"></button>
             </div>
             <div class="separator"></div>
             <center>
