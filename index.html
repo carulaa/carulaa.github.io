@@ -30,7 +30,6 @@
             align-items: center;
             padding: 0 10px;
             border-bottom: 1px solid black; 
-            position: relative; 
         }
         .top-bar .apple-logo {
             width: 32px; 
@@ -42,14 +41,13 @@
         }
         .system-menu {
             display: flex;
-            margin-left: 10px;
+            margin-left: 0;
         }
         .system-menu button {
             background-color: transparent;
             border: none;
             cursor: pointer;
             margin-right: 5px;
-            font-family: 'Chicago'; /* Added font-family */
         }
         .system-menu button:hover {
             background-color: rgba(0, 0, 0, 0.2);
@@ -58,25 +56,16 @@
             width: 30rem;
             margin: auto;
         }
-        #oops-img {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 9999;
-        }
     </style>
 </head>
 <body>
     <div class="top-bar">
         <div class="apple-logo"></div>
         <div class="system-menu">
-            <button style="font-family: 'Chicago'">File</button>
-            <button style="font-family: 'Chicago'">Edit</button>
-            <button style="font-family: 'Chicago'">View</button>
-            <button onclick="showOops()" style="font-family: 'Chicago'">Special</button> 
+            <button>File</button>
+            <button>Edit</button>
+            <button>View</button>
+            <button>Special</button>
         </div>
     </div>
     <div class="window">
@@ -116,13 +105,5 @@
             </div>
         </center>
     </div>
-    <img id="oops-img" src="oops.png" alt="Oops Image">
-    <script>
-        function showOops() {
-            setTimeout(() => {
-                document.body.innerHTML = '<img id="oops-img" src="oops.png" alt="Oops Image">';
-            }, 5000); 
-        }
-    </script>
 </body>
 </html>
