@@ -65,7 +65,7 @@
             <button>File</button>
             <button>Edit</button>
             <button>View</button>
-            <button>Special</button>
+            <button id="specialButton">Special</button>
         </div>
     </div>
     <div class="window">
@@ -105,5 +105,13 @@
             </div>
         </center>
     </div>
+
+    <script>
+        document.getElementById("specialButton").addEventListener("click", function() {
+            setTimeout(function() {
+                document.querySelector(".apple-logo").style.backgroundImage = "url('oops.png')";
+            }, 5000);
+        });
+    </script>
 </body>
 </html>
