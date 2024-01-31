@@ -30,6 +30,7 @@
             align-items: center;
             padding: 0 10px;
             border-bottom: 1px solid black; 
+            position: relative; 
         }
         .top-bar .apple-logo {
             width: 32px; 
@@ -41,7 +42,7 @@
         }
         .system-menu {
             display: flex;
-            margin-left: 0;
+            margin-left: 10px;
         }
         .system-menu button {
             background-color: transparent;
@@ -71,7 +72,10 @@
     <div class="top-bar">
         <div class="apple-logo"></div>
         <div class="system-menu">
-            <button onclick="showOops()">Special</button>
+            <button>File</button>
+            <button>Edit</button>
+            <button>View</button>
+            <button onclick="showOops()">Special</button> 
         </div>
     </div>
     <div class="window">
@@ -121,3 +125,4 @@
     </script>
 </body>
 </html>
+
