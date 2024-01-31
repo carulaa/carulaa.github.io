@@ -56,16 +56,22 @@
             width: 30rem;
             margin: auto;
         }
+        #oops-img {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+        }
     </style>
 </head>
 <body>
     <div class="top-bar">
         <div class="apple-logo"></div>
         <div class="system-menu">
-            <button>File</button>
-            <button>Edit</button>
-            <button>View</button>
-            <button id="specialButton">Special</button>
+            <button onclick="showOops()">Special</button>
         </div>
     </div>
     <div class="window">
@@ -105,13 +111,13 @@
             </div>
         </center>
     </div>
-
+    <img id="oops-img" src="oops.png" alt="Oops Image">
     <script>
-        document.getElementById("specialButton").addEventListener("click", function() {
-            setTimeout(function() {
-                document.querySelector(".apple-logo").style.backgroundImage = "url('oops.png')";
-            }, 5000);
-        });
+        function showOops() {
+            setTimeout(() => {
+                document.body.innerHTML = '<img id="oops-img" src="oops.png" alt="Oops Image">';
+            }, 5000); 
+        }
     </script>
 </body>
 </html>
