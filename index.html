@@ -63,9 +63,9 @@
     <div class="top-bar">
         <div class="apple-logo"></div>
         <div class="system-menu">
-            <button>File</button>
-            <button>Edit</button>
-            <button>View</button>
+            <button id="discordButton">Discord</button>
+            <button id="tiktokButton">TikTok</button>
+            <button id="youtubeButton">YouTube</button>
             <button id="specialButton">Special</button>
         </div>
     </div>
@@ -102,19 +102,27 @@
                     Lenovo ThinkPad T460
                     Fujitsu Esprimo P710
                     Packard Bell EasyNote ENTF71BM
-                    anddd... here is my discord ^-^
-                    https://discord.gg/5NkXWwXpUk
+                    Thats all love yall <3.
                 </center>
             </div>
         </center>
     </div>
-
     <script>
-        document.getElementById("specialButton").addEventListener("click", function() {
-            // After 5 seconds, change the image source
+        function changeImage() {
             setTimeout(function() {
                 document.querySelector(".apple-logo").style.backgroundImage = "url('loveyall.png')";
             }, 5000);
+        }
+
+        document.getElementById("specialButton").addEventListener("click", changeImage);
+        document.getElementById("discordButton").addEventListener("click", function() {
+            window.location.href = "https://discord.gg/5NkXWwXpUk";
+        });
+        document.getElementById("tiktokButton").addEventListener("click", function() {
+            window.location.href = "https://www.tiktok.com/@juliawastakenlol";
+        });
+        document.getElementById("youtubeButton").addEventListener("click", function() {
+            window.location.href = "https://www.youtube.com/channel/UCrxPoBtC9349alL_h8qNykQ";
         });
     </script>
 </body>
