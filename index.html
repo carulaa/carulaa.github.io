@@ -66,6 +66,7 @@
             <button id="discordButton">Discord</button>
             <button id="tiktokButton">TikTok</button>
             <button id="youtubeButton">YouTube</button>
+            <button id="steamButton">Steam</button>
             <button id="specialButton">Special</button>
         </div>
     </div>
@@ -102,11 +103,14 @@
                     Lenovo ThinkPad T460
                     Fujitsu Esprimo P710
                     Packard Bell EasyNote ENTF71BM
-                    Thats all love yall <3.
+                    <center>
+                    that's all love yall <3
+                    </center>
                 </center>
             </div>
         </center>
     </div>
+
     <script>
         function changeImage() {
             setTimeout(function() {
@@ -114,6 +118,7 @@
             }, 5000);
         }
 
+        // Event listeners for the buttons
         document.getElementById("specialButton").addEventListener("click", changeImage);
         document.getElementById("discordButton").addEventListener("click", function() {
             window.location.href = "https://discord.gg/5NkXWwXpUk";
@@ -124,6 +129,10 @@
         document.getElementById("youtubeButton").addEventListener("click", function() {
             window.location.href = "https://www.youtube.com/channel/UCrxPoBtC9349alL_h8qNykQ";
         });
+        document.getElementById("steamButton").addEventListener("click", function() {
+            window.location.href = "https://steamcommunity.com/id/juliawastaken/";
+        });
     </script>
 </body>
+</html>
 </html>
