@@ -1,19 +1,10 @@
-body {
-    background-color: black;
-    color: white;
-    margin: 0;
-    padding: 0;
-}
-
-
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap');
 
 body {
     background-color: black;
     color: white;
-    font-family: 'Be Vietnam Pro', Arial, sans-serif;
+    font-family: 'Be Vietnam Pro', monospace;
     text-align: center;
     margin: 0;
     padding: 0;
 }
-
