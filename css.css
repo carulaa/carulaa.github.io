@@ -4,19 +4,12 @@ body {
     background-color: black;
     color: white;
     font-family: 'Be Vietnam Pro', monospace;
-    text-align: center;
     margin: 0;
     padding: 0;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 p {
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 .container {
