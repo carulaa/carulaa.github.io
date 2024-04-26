@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Karolina's site</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="apple.png"> 
+    <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
+    <style>
+        @font-face {
+            font-family: 'Chicago';
+            src: url('ChicagoFLF.woff2') format('woff2'),
+                 url('ChicagoFLF.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .top-bar, .system-menu button {
+            font-family: 'Chicago'; 
+        }
+        .top-bar {
+            background-color: white; 
+            height: 30px;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            border-bottom: 1px solid black; 
+        }
+        .top-bar .apple-logo {
+            width: 32px; 
+            height: 32px;
+            background-image: url('apple.png'); 
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+        .system-menu {
+            display: flex;
+            margin-left: 0;
+        }
+        .system-menu button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+        .system-menu button:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        .window {
+            width: 30rem;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="apple-logo"></div>
+        <div class="system-menu">
+            <button id="discordButton">Discord</button>
+            <button id="tiktokButton">TikTok</button>
+            <button id="youtubeButton">YouTube</button>
+            <button id="steamButton">Steam</button>
+        </div>
+    </div>
+    <div class="window">
+        <div class="title-bar"> 
+            <h1 class="title">carulaa</h1>
+        </div>
+        <div class="separator"></div>
+        <center>
+            <div class="window-pane">
+                Hi, my name is Karolina and I am 14 years old, I am lesbian I love technology, I am currently programming a discord bot called karolina.py, also I have my own Discord server called Republic of Cherry Blossom, so that's cool, I love tea and gaming, that's all for now.
+                    </center>
+                </center>
+            </div>
+        </center>
+    </div>
+<script>
+    document.getElementById("discordButton").addEventListener("click", function() {
+        window.location.href = "not ready yet!";
+    });
+    document.getElementById("tiktokButton").addEventListener("click", function() {
+        window.location.href = "https://www.tiktok.com/@juliawastakenlol";
+    });
+    document.getElementById("youtubeButton").addEventListener("click", function() {
+        window.location.href = "https://www.youtube.com/channel/UCrxPoBtC9349alL_h8qNykQ";
+    });
+    document.getElementById("steamButton").addEventListener("click", function() {
+        window.location.href = "https://steamcommunity.com/id/juliawastaken/";
+</script>
+</body>
+</html>
